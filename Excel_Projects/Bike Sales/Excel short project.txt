@@ -1,0 +1,18 @@
+ankitbiswas@ankitservices@onmicrosoft.com
+
+remove duplicates
+change M to Married or Male . F to female . S to Single
+In currency , remove decimals
+Create Age Brackets column -> If Age > 55 then Old else if Age >=31 then Middle Age else if Age < 31 else Invalid 
+
+Create Pivot table in the pivot table sheet - Avg income per purchase
+	Avg income per gender
+	Avg income per gender and bike purchased
+	Create a stacked column chart
+
+Create Pivot Table in pivot table sheet - Purchase Count per distance	
+	Go to the worksheet page , and change 10+ Miles to More than 10 Miles otherwise the 10+ miles appear in between 
+	Give Count of Purchase to calculate
+	Create Stacked chart column
+
+Create Pivot Table - Age bracket per purchase 

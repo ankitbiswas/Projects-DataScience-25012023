@@ -1,0 +1,104 @@
+Ctrl + T to convert to Table
+
+Create Pivot Table (Month wise Sales and Profit)
+ Take Order Date in Rows - Keep only Months
+ Sum of Sales in Values
+ Sum of Profit in Values
+ Convert to Dollars and convert to Thousans in terms of k - #0.00,"K"
+ Insert Combo Chart 
+ 	For Profit click Secondary Axis
+	Sales - bar chart 
+	Profit - area chart
+ Hide all Field Buttons
+
+
+Create Pivot Table - New Worksheet For waterfall chart (Category wise profit)
+	Take Category in Rows 
+	Sum of Profit in Values
+	Insert Waterfall chart - but we cant create a waterfall in pivot table 
+	So we have to get the table out of pivot . So create another table and copy the elements from
+	pivot table
+
+
+	= GETPIVOTTABLE("Profit",$A$3,"Category",A3)
+
+	Now insert waterfall chart 
+	Click on Grant Total bar and go to formatting and click on "Set Total"
+
+Create Pivot Table - New Worksheet for Pie chart - (Category wise sales)
+
+	Category in Rows
+	Sum of Sales ->convert to percentage of grand total
+	Go to Pivot chart - insert Dough Nut chart
+	Hide field buttons
+	Activate data labels
+	To increase width of the sections -> format data series -> Reduce doughnut hole size to 60%
+	Increate doughnut explosion to 1%
+
+
+Create Pivot Table - New Worksheet for Map Chart
+
+	Select States in Row
+	Select Sum of Sales in values
+	In Pivot Chart , select Map chart but again we have to move the data out of pivot table using reference 
+	In map chart , one thing are important - internet connection 
+	Now select Map chart from Pivot 
+	Add a Slicer of Year to it 
+
+Create Pivot Table - for Top Five categories
+	
+	Select Sub categories in Row 
+	Sum of Sales in value
+	Sort Largest to Smallest by values
+	In Filter , Include Top 5
+	In pivot chart , add bar chart horizantal
+
+
+KPIs design 
+
+Create Pivot Table for KPIs
+	Select Months in Row Labels
+	Add Sum of Sales in Values
+	In Pivot Chart , Add Line chart
+	Hide all lables, fields and grid lines 
+	and then reduce the side of the chart to make it look like spark line
+	
+	In the same worksheet , again create a pivot table Sum of Profits per months
+	and Sum of Qty per Months and Count of Order Id per Months
+	and Profit margin per months
+	Profit Margin = Sum of Profit/Sum of Sales
+	To create the profit margin table , add Months in Row labels
+	Click on any of the months ,go to PivotTable Analyze , click Field,Items and Sets
+	Click insert Calculated Field
+	Give name - Profit Margin
+	Formula = Profit/Sales
+	Convert to Percentage
+	and then create their corresponding line charts the same way
+
+	Take each of the grand totals of each of the pivot tables and reference it in an outside cell
+
+For YOY growth 
+	Take Years in Rows
+	Sum of Sales in Values
+	Sum of Profits in Values
+	Sum of Qty in Values
+	Count of Order Id in Values
+	Sum of Profit Margin
+	
+	Deselect Grand total from the pivot table so that we dont see it 
+
+	In an external cell , calc yoy ,i.e., =(2014 Sales/2013 Sales)-1
+	
+	Then we have to do formatting , click on custom formatting and give the 
+	[Green]uparrow0.00%;[Red]downarrow0.00%
+
+
+
+	
+	
+	
+
+	
+
+
+  
