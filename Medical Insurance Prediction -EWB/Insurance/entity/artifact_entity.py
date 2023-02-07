@@ -1,5 +1,7 @@
 from dataclasses import dataclass
 
+#make this class static
+@dataclass
 class DataIngestionArtifact:
 
     feature_store_file_path: str
