@@ -1,0 +1,26 @@
+drop user id 
+vehicle id - 12 and 89 are heavy drivers with their large presence. can potentially introduce overfitting because there will be bias
+because of heavy presence of 12 and 89.
+drop the column
+
+to_date drop it
+to_area drop null
+from date from time booking booking time analysis ( what day , time , weekday or weekend ,etc)
+from latitude and longitude get kms
+convert latitude longitude null values to 0 or use mode values for a from_area_id or from_lat & from_long
+OR
+impute to_area_id null values to 9999 if the package is not point to point 
+if point to point then impute to_area_id to mode value
+
+drop the idea of from_date_day_of_week and also booking_date_day_of_week and keep only weekday/weekend idea
+
+another step:
+
+
+
+do a EDA , by extracting month of booking date & starting date 
+check their distribution and 
+also check day of month 
+
+
+cancellation density of area
