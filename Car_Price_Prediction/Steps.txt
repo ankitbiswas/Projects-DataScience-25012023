@@ -1,0 +1,22 @@
+create style.css file under static ->css folder structure
+
+create index.html file under templates folder 
+
+use the bootstrap starter template and paste in index.html
+
+add first rel link  <link rel="stylesheet" href="static/css/style.css">
+
+in def index():
+	companies = sorted(car['company'].unique())
+	car_models=...
+	year =...
+	fuel_type = car['fuel_type'].unique()
+	companies.insert(0,'Select Company')
+	return render_template('index.html',companies=companies,car_models=car_models,years=year,fuel_types=fuel_type)
+
+
+run the requirements
+pip freeze > requirements.txt
+pip install -r requirements.txt
+
+
